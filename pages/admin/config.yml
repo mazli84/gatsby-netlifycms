@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: mazli84/gatsby-netlifycms # Path to your Github repository
+  branch: master # Branch to update
