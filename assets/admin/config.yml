@@ -7,3 +7,20 @@ media_folder: "assests/uploads/images"
 public_folder: "/uploads/images"
   
   
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Article" # Used in the UI, ie.: "New Post"
+    folder: "pages/articles/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Layout", name: "layout", widget: "string", default: "post"}
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Category", name: "category", widget: "string", default: "Test"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Subtitle, optional", name: "sajat", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      
+      
+
