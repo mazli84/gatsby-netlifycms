@@ -2,3 +2,8 @@ backend:
   name: github
   repo: mazli84/gatsby-netlifycms # Path to your Github repository
   branch: master # Branch to update
+  
+  media_folder: "assests/uploads/images"
+  public_folder: "/uploads/images"
+  
+  
