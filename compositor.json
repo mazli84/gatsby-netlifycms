@@ -1,0 +1,143 @@
+{
+  "name": "mazli84/gatsby-netlifycms",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/mazli84/gatsby-netlifycms",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/gatsby-starter-alchemy",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "gatsby-netlifycms",
+      "subhead": "A Gatsby starter with PostCSS powers",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "gatsby-netlifycms: A Gatsby starter with PostCSS powers",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "mazli84",
+          "repo": "gatsby-netlifycms"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<p><img src=\"https://cl.ly/jmH1/alchemy-logo.png\"></p>\n\n<h1>Alchemy</h1>\n\n<p>A <a href=\"https://github.com/gatsbyjs/gatsby\">Gatsby</a> starter with <a href=\"http://postcss.org\" target=\"_blank\">PostCSS</a> powers &#x2728;&#x1F52E;</p>\n\n<h2>What is Alchemy?</h2>\n<p>Alchemy is a Gatsby starter with PostCSS powers, you get the power of Gatsby and the power of PostCSS.</p>\n<p>This starter is intended to get you up and running with your first Gatsby site.</p>\n<p>Alchemy was designed to provide easy and quick customization, this starter is not a theme, is a boilerplate.</p>\n<p>Use this boilerplate to design your own site from 0.</p>\n<h2>Features</h2>\n<ul>\n<li>Uses PostCSS</li>\n<li>Includes PostCSS plugins out of the box</li>\n<li>Uses Lost Grid as the grid system</li>\n<li>Easy to customize</li>\n<li>Neat folder structure</li>\n</ul>\n<h2>PostCSS plugins</h2>\n<ul>\n<li><a href=\"https://github.com/postcss/postcss-nested\">postcss-nested</a></li>\n<li><a href=\"https://github.com/postcss/postcss-import\">postcss-import</a></li>\n<li><a href=\"https://github.com/MoOx/postcss-cssnext\">postcss-cssnext</a></li>\n<li><a href=\"https://github.com/simplaio/rucksack\">rucksack</a></li>\n<li><a href=\"https://github.com/peterramsing/lost\">lost</a></li>\n</ul>\n<h2>Folder structure</h2>\n<h4>Must edit</h4>\n<ul>\n<li><strong>components</strong> - your react components</li>\n<li><strong>pages/articles</strong> - the articles for your blog</li>\n<li><strong>pages/pages</strong> - the pages for your site</li>\n<li><strong>pages/index.jsx</strong> - the index of your site</li>\n<li><strong>pages/_template.jsx</strong> - the main template of your site</li>\n<li><strong>styles/base</strong> - your base styles</li>\n<li><strong>styles/components</strong> - the styles for your components</li>\n<li><strong>styles/main.css</strong> - your main stylesheet</li>\n<li><strong>config.toml</strong> - configuration file</li>\n</ul>\n<h4>May leave as it is</h4>\n<ul>\n<li><strong>utils</strong> - utilities such as typography.js</li>\n<li><strong>wrappers</strong> - wrappers for Gatsby, such as html, md, and so on.</li>\n<li><strong>styles/markdown-styles.css</strong> - the styles used for your code blocks (highlight.js)</li>\n<li><strong>gatsby-node.js</strong> - webpack configuration overrides</li>\n<li><strong>html.jsx</strong> - the main html tree</li>\n</ul>\n<h2>Installing</h2>\n<p><code>gatsby new my-site https://github.com/bntzio/gatsby-starter-alchemy</code></p>\n<p><code>cd my-site</code></p>\n<p><code>npm run develop</code></p>\n<h2>License</h2>\n<p>MIT License</p>\n<p>Copyright (c) 2017 Enrique Benitez (bntz.io)</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the &quot;Software&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/mazli84/gatsby-netlifycms",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mazli84",
+          "text": "mazli84"
+        }
+      ]
+    }
+  ]
+}
